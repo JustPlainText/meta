@@ -16,11 +16,11 @@ Read: http://www.effectivetrainings.de/blog/2012/04/22/git-flow-einfaches-arbeit
 
 30. restart cmder
 
-for ( every repo ) {
+ for ( every repo ) {
 
- 40a. change to repo(s)
+  40a. change to repo(s)
 
- 40b. git flow init #(just access all proposals)
+  40b. git flow init #(just access all proposals)
 
-}
+ }
 
