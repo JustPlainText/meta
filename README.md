@@ -3,8 +3,9 @@
 GAE:
 https://jpt-2-162623.appspot.com/
 
-Travis-CI:
-https://travis-ci.org/JustPlainText/front
+Travis-CI: https://travis-ci.org/JustPlainText/front
+
+
 
 # Developing
 
@@ -37,10 +38,12 @@ https://docs.docker.com/docker-for-windows/#explore-the-application-and-run-exam
 
 ### Docker quick control
 Build container (Dockerfile inside current dir):
-$ docker build -t my-angular-app . #my-angular-app - new image name
+$ docker build -t my-angular-app .
+#my-angular-app - new image name
 
 Create & Run docker in forderground:
-docker run -p 80:8080 --name my_app -it my-angular-app #my-angular-app - image name | my_app - new container name | 80:8080 out(wolrd) <-> in(container) Ports
+docker run -p 80:8080 --name my_app -it my-angular-app
+#my-angular-app - image name | my_app - new container name | 80:8080 out(wolrd) <-> in(container) Ports
 #for run in background: -d
 
 Stop container:
@@ -79,3 +82,10 @@ Update GAE docker over Travis-CI:
 https://graysonkoonce.com/continuous-deployment-to-google-app-engine-using-travis-ci/
 
 https://cloud.google.com/solutions/continuous-delivery-with-travis-ci
+
+
+## Kubernetes:
+
+Installation von minikube und kubectl unter Windows:
+https://blogs.msdn.microsoft.com/wasimbloch/2017/01/23/setting-up-kubernetes-on-windows10-laptop-with-minikube/
+#set --kubernetes-version="v1.6.0" or higher
