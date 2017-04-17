@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: front
+  labels:
+    app: jpt
+    tier: frontend
+spec:
+  type: LoadBalancer
+  ports:
+    # the port that this service should serve on (to out)
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: jpt
+    tier: frontend

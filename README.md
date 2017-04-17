@@ -1,7 +1,18 @@
 # This and that about developing of JPT and ....
 
-GAE:
-https://jpt-2-162623.appspot.com/
+GCP (Google Cloud Platform):
+
+Create new project:
+Project ID: jpt-21
+
+Lokal den Projket setzen:
+λ gcloud config set project jpt-21
+
+gcoud muss hierfür bereits installiert sein:
+TODO
+
+https://jpt-21.appspot.com/
+
 
 Travis-CI: https://travis-ci.org/JustPlainText/front
 
@@ -88,4 +99,14 @@ https://cloud.google.com/solutions/continuous-delivery-with-travis-ci
 
 Installation von minikube und kubectl unter Windows:
 https://blogs.msdn.microsoft.com/wasimbloch/2017/01/23/setting-up-kubernetes-on-windows10-laptop-with-minikube/
-#set --kubernetes-version="v1.6.0" or higher
+
+Start minikube in Powershell mit Admin:
+
+minikube.exe start --kubernetes-version="v1.6.0" --vm-driver="hyperv" --memory=2048 --hyperv-virtual-switch="My Virtual Switch" --v=7 --alsologtostderr
+
+Test:
+λ minikube.exe status
+```
+minikubeVM: Running
+localkube: Running
+```

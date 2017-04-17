@@ -1,8 +1,8 @@
 version: "2"
 services:
   front:
-    image: front
+    image: jptttttt/front
     ports:
       - "8080:8080"
   back:
-    image: back:1
+    image: jptttttt/back
