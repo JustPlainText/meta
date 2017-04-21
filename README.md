@@ -110,3 +110,19 @@ Test:
 minikubeVM: Running
 localkube: Running
 ```
+
+
+k8s Konfiguration local testen:
+
+cd meta/k8s
+kubectl create -f setup.yaml
+
+Hierfür müssen beide images jptttttt/front & jptttttt/back lokal abgelest oder in docker-hub vorhanden sein.
+
+Ein Cluster in GCP erzeugen:
+gcloud container clusters create jpt
+
+
+# Encryption
+Encrypt: openssl enc -aes-256-cbc -pass pass:YOURPASSWORD -p -in msg.txt -out enc.txt -base64
+Decrypt: openssl enc -aes-256-cbc -pass pass:YOURPASSWORD -p -in enc.txt -out dec.txt -base64 -d
